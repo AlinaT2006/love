@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  background: url("./bg.jpg") no-repeat top center / cover;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main__text {
+  font-size: 50px;
+  font-family: sans-serif;
+  color: darkred;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.btn__yes,
+.btn__no {
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.btn__yes {
+  background: green;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.btn__no {
+  background: red;
+  position: absolute;
+  transform: translateX(70%);
+}
+
+/* Скрываем картинку изначально */
+.image-container {
+  display: none;
+  text-align: center; /* Центрируем картинку внутри контейнера */
+}
+
+img {
+  max-width: 500px;
+  width: 100%; 
+  margin-top: 20px;
+}
